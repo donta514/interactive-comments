@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+// Breakpoints
+$mobileBreakpoint: 375px;
+$desktopBreakpoint: 1440px;
+
+// Primary Colors
+$moderateBlue: hsl(238, 40%, 52%);
+$softRed: hsl(358, 79%, 66%);
+$lightGrayBlue: hsl(239, 57%, 85%);
+$paleRed: hsl(357, 100%, 86%);
+
+// Neutral Colors
+$darkBlue: hsl(212, 24%, 26%);
+$grayishBlue: hsl(211, 10%, 45%);
+$lightGray: hsl(223, 19%, 93%);
+$veryLightGray: hsl(228, 33%, 97%);
+$white: hsl(0, 0%, 100%);
+
+// Font Styles
+$fontSize: 1rem;
+$fontFamily: "Rubik", sans-serif;
+$fontNormal: 400;
+$fontSemiBold: 500;
+$fontBold: 700;
+
+// CSS Reset
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    background-color: #F2F2F2;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+.attribution {
+    font-family: $fontFamily;
+    font-size: 11px;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    a {
+        color: hsl(228, 45%, 44%);
+    }
+}
+
+// Initialize Styles
+.container {
+    .wrapper {
+        font-family: $fontFamily;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
